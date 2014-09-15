@@ -107,8 +107,12 @@ h1, h2, h3, h4, h5, h6 {
   @extend .lightfont;
   font-size: 1.7em;
 }
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+  padding: 0;
+}
   
-.top-bar-section ul li.menulink-inverse {
+.top-bar-section ul li.menulink.active {
   background: #FFF !important;
   i, a {
     background: #FFF !important;
