@@ -1,0 +1,13 @@
+name : How to teach HTML
+brand : Teach HTML
+description : This is the description of my site
+keyword: 
+url : http://trinket.io
+imageurl: http://trinket.io//img/icons/favicon.ico
+email : hello@trinket.io
+twitter : trinketapp
+github : trinketapp
+author: Author Name
+analytics: UA-8418273-8
+year: 2014
+markdown: kramdown

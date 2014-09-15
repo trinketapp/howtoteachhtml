@@ -1,0 +1,31 @@
+<div class="sticky">
+<nav class="top-bar" data-topbar role="navigation">
+   <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">HTML</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="left show-for-medium-up">
+      <li class="show-for-small-up menulink-inverse"><a href="#learn">{% include icons/learnicon %}</a></li>
+      {% if page.id == "index" %}
+      <li class="menutext"><a><i class="fa fa-plus"></i></a></li>
+      <li class="menulink"><a href="#teach">{% include icons/teachicon %}</a></li>
+      <li class="menutext"><a><i class="fa fa-plus"></i></a></li>
+      <li class="menulink"><a href="#share">{% include icons/shareicon %}</a></li>
+      <li class="menutext"><a><i class="fa fa-arrow-right fa-sm"></i></a></li>
+      <li class="menutext"><a><i class="fa fa-child fa-2x"></i></a></li>
+      {% endif %}
+    </ul>
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="menulink"><a href="#"><i class="fa fa-twitter fa-inverse fa-lg"></i><span class="show-for-small-only">Tweet</span></a></li>
+      <li class="menulink"><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+      <li class="menulink"><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+    </ul>
+  </section>
+</nav>
+</div>

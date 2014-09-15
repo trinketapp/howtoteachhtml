@@ -1,0 +1,20 @@
+<h1>{{include.name}}{{include.id}}</h1>
+<div id="wistia_{{ inlcude.id }}" class="wistia_embed" style="width:800px;height:450px;" data-video-width="800" data-video-height="450">&nbsp;</div>
+      <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/playlist-v1.js"></script>
+      <script>
+        {{ include.name }}Playlist = Wistia.playlist("{{ include.id }}", {
+        version: "v1",
+        stillUrl: "http://trinket.io/img/trinket-logo.png",
+        theme: "tab",
+        videoOptions: {
+          volumeControl: true,
+          autoPlay: true,
+          videoWidth: "800",
+          videoHeight: "450"
+        },
+        media_0_0: {
+          autoPlay: false,
+          controlsVisibleOnLoad: false
+        }
+      });
+      </script>

@@ -1,0 +1,35 @@
+<html>
+<head>
+    <style type="text/css">
+        body {
+            background-color: #008aff;
+            text-align: center;
+        }
+        .words {
+            position: relative;
+            top: 50%;
+            transform: translateY(-60%);
+            color: #fdfdfd;
+        }
+        .words a {
+            color: #fdfdfd;
+            text-decoration: none;
+        }
+        .words p {
+            font-size: 1.2em;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="words">
+        <a href="http://howtoteachhtml.com">
+            <h1>Customize Examples for Your Students Here!</h1>
+        </a>
+        <p>When you're done editing your code, click 
+        the buttons above to get a link to send your
+        Students.  You can also embed a Trinket right 
+        on your class website.</p>
+    </div>
+</body>
+</html>

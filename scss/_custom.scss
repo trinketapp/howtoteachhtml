@@ -1,0 +1,231 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 200;
+	@media #{$medium-up} {
+	}
+	@media #{$large-up} {
+	}
+}
+
+/* Had to rename the flex-video class to prevent modal collision */
+
+.flex-video-class {
+  @include flex-video-container();
+}
+
+.custom-reveal-modal {
+  @include reveal-bg();
+}
+
+.clearbg {
+  background: rgba(0,0,0,0);
+  border: 0px;
+}
+
+.darkbg {
+  background: #333333;
+  border: 0px;
+}
+
+.yellowbg {
+  background: #ffda00;
+}
+
+.lightbg {
+  background: #FFFFFF;
+  border: 0px;
+}
+
+.lightfont {
+  color: #FFF;
+}
+
+.trinket-player {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  iframe {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+}
+
+.trinket-area {
+  @extend .triket-player;
+  @extend .show-for-medium-up;
+}
+
+.tab-bar section img {
+  width: 100px;
+  height: auto;
+}
+
+@mixin lightfont {
+  color: #FFF;
+  h1, h2, h3, h4, h5, h6, p {
+    color: #FFF;
+  }
+}
+
+.darkfont {
+  color: #333
+}
+
+.bluebg {
+  background: #008aff;
+}
+
+.greenbg {
+  background: #26bf12;
+}
+
+.yellowbg {
+  background: #ffda00;
+}
+  
+@mixin inherit {
+  background: inherit;
+  color: inherit;
+}
+
+.name {
+  @extend .lightfont;
+  display: inline;
+}
+
+.top-bar-section {
+  @extend h1;
+  @extend .name;
+  display: inline;
+}
+
+.top-bar-section ul li {
+  a, i {
+    font-size: 1em;
+  }
+}
+  
+.menulink {
+  @extend .lightfont;
+  font-size: 1.7em;
+}
+  
+.top-bar-section ul li.menulink-inverse {
+  background: #FFF !important;
+  i, a {
+    background: #FFF !important;
+    color: #008aff;
+  }
+}
+
+.top-bar-section ul li a {
+  i.fa-plus, i.fa-right-arrow {
+    font-size: .7em
+  }
+  i.fa-child {
+    font-size: 1.5em
+  }
+}
+  
+.menutext {
+  @extend .menulink;
+  font-size: 1.1em;
+  li:hover, i:hover, a:hover {
+    @extend .lightfont;
+    background-color: transparent !important;
+  }
+  span {
+    display: inline;
+  }
+}
+ 
+.button-video {
+  @include button();
+  @include inherit;
+
+}
+
+.learnicon {
+  @extend fa;
+  @extend fa-graduation-cap;
+}
+
+#teachicon {
+  @extend .fa;
+  @extend .fa-group;
+  @extend .fa-lg;
+}
+
+#bigtitle {
+  @extend .lightfont;
+}
+
+.learn {
+  @extend .lightbg;
+  .panel {
+    @einclude inherit;
+  }
+}
+  
+.teach {
+  @extend .greenbg;
+  @include lightfont;
+  .panel {
+    @include inherit;
+  }
+  .button-group {
+    border: 1px;
+    border-color: #FFF;
+  }
+}
+
+.share {
+  @extend .lightbg;
+}
+  
+div.fullheight {
+  height: 100%;
+  padding-bottom: 2em;
+}
+/* Wistia */
+
+
+.wistia_embed {
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: 50%;
+}
+
+/* .videoWrapper {
+  position: relative;
+  height: 0;
+}
+
+* html .videoWrapper {
+  margin-bottom: 45px;
+  margin-bot\tom: 0;
+}
+
+.videoWrapper .videoPadding {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.videoWrapper .wistia_embed,
+.videoWrapper .wistia_playlist {
+  height: 100%;
+  width: 100%;
+}
+
+.wideScreen {
+  padding-bottom: 56.25%; 
+}
+
+.fourByThree {
+  padding-bottom: 75%;
+}
+
+.withSocialBar {
+  padding-top: 28px;
+} */
