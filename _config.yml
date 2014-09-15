@@ -11,3 +11,5 @@ author: Author Name
 analytics: UA-8418273-8
 year: 2014
 markdown: kramdown
+
+safe: true
