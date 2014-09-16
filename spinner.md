@@ -21,13 +21,12 @@ layout: default
 
 <div class="row text-center">
   <img src="/img/trinket-emblem.png" class="fa-spin"><br>
-  
-<img src="/img/key.svg" class="fa-spin" style="transform: scale(.8); border-color: #fff; color: #fff;"> 
+  <img src="/img/key.svg" class="fa-spin" style="transform: scale(.8); border-color: #fff; color: #fff;"> 
 <br>
 <span class="fa-stack fa-5x">
   <i class="fa fa-circle fa-stack-2x" style="color: #ffda00"></i>
-  <img src="/img/white-key.png"class="fa-stack-1x fa-spin">
-</span>
+  <i class="fa fa-key fa-stack-1x fa-spin" style="color: #fff"></i>
+</span> 
   <br>
 <span class="fa-stack fa-4x">
   <i class="fa fa-circle fa-stack-2x" style="color: #ffda00"></i>
