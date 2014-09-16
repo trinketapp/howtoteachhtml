@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6 {
   @include reveal-bg();
 }
 
+/* Backgrounds */
+
 .clearbg {
   background: rgba(0,0,0,0);
   border: 0px;
@@ -26,13 +28,21 @@ h1, h2, h3, h4, h5, h6 {
   border: 0px;
 }
 
-.yellowbg {
-  background: #ffda00;
-}
-
 .lightbg {
   background: #FFFFFF;
   border: 0px;
+}
+
+.bluebg {
+  background: #008aff;
+}
+
+.greenbg {
+  background: #26bf12;
+}
+
+.yellowbg {
+  background: #ffda00;
 }
 
 .lightfont {
@@ -68,18 +78,6 @@ h1, h2, h3, h4, h5, h6 {
 .darkfont {
   color: #333
 }
-
-.bluebg {
-  background: #008aff;
-}
-
-.greenbg {
-  background: #26bf12;
-}
-
-.yellowbg {
-  background: #ffda00;
-}
   
 @mixin inherit {
   background: inherit;
@@ -114,13 +112,16 @@ h1, h2, h3, h4, h5, h6 {
   
 .top-bar-section ul li.menulink.active {
   background: #FFF !important;
-  i, a {
+  i, a, a:not(.button) {
     background: #FFF !important;
     color: #008aff;
   }
 }
 
 .top-bar-section ul li a {
+  i {
+    margin-right: .5em;
+  }
   i.fa-plus, i.fa-right-arrow {
     font-size: .7em
   }

@@ -54,11 +54,11 @@ wistiaPlaylist = Wistia.playlist("oj53jeg68r", {
 
 <!-- Learn -->
 
-{% assign section="learn" %}
+{% assign section="code" %}
 
 <div class="{{ section }}">
   <div class="fullheight"> 
-  <div data-magellan-destination="learn" class="row" id="{{ section }}">
+  <div data-magellan-destination="{{ section }}" class="row" id="{{ section }}">
     <div class="small-12 columns panel">
       <div class="row">
         <div class="small-10 colums right">
@@ -106,7 +106,7 @@ wistiaPlaylist = Wistia.playlist("oj53jeg68r", {
 <!-- Teach Section -->
 <div class="{{ section }}">
   <div class="fullheight">
-  <div data-magellan-destination="teach" class="row" id="{{ section }}">
+  <div data-magellan-destination="{{ section }}" class="row" id="{{ section }}">
     <div class="small-12 columns panel rounded">
       <div class="row">
         <div class="small-10 colums right">
@@ -154,7 +154,7 @@ wistiaPlaylist = Wistia.playlist("oj53jeg68r", {
 {% assign section="share" %}
 
 <!-- Share -->
-<div data-magellan-destination="share" class="row" id="{{ section }}">
+<div data-magellan-destination="{{ section }}" class="row" id="{{ section }}">
   <div class="small-12 columns panel">
     <div class="row">
       <div class="small-10 colums right">
