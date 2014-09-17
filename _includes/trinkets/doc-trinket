@@ -1,0 +1,26 @@
+<html>
+<head>
+    <style type="text/css">
+        body {
+            background-color: #008aff;
+            color: #fdfdfd;
+            text-align: center;
+        }
+        div {
+            position: relative;
+            top: 50%;
+            transform: translateY(-60%);
+        }
+        p {
+            font-size: 1.2em;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="words">
+        <h1>Interactive HTML!</h1>
+        <p>Teaching HTML should be easy and fun.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+    <style>
+        body {  
+            background: lightblue;
+        }
+        p { 
+            color: brown;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styling HTML</h1>
+    <p>
+        This paragraph and everything elst in this HTML plage
+        has <b>style</b>: everything from font size to position to 
+        color is controled in the <code>style</code> tags above.
+    </p>
+    <h2>Your Assignment</h2>
+    <p>
+        Notice that all of the paragraphs have the same 
+        brown color.  That is because of instructions 
+        in the <code>&lt;style&gt;</code> at the top.
+    </p>
+    <ul>
+    <li>
+        Can you find <code>color: brown</code> and change
+        it to be <code>color: blue</code>?  What happens?
+    </li>
+    <li>
+        Can you find <code>font-size: 16px</code> and change
+        it to be another number.  What happens?
+    </li>
+    <li>
+        Can you change the background of the page to another color?
+        HTML knows common color words like "red", "green", "blue",
+        "organge", "pink", and "purple".  If you want a very 
+        specific color you look up or find its RGB value.  
+        Try <code>background: rgb(200, 150, 200);</code>
+    </li>
+    </ul>
+
+</body>
+</html>
