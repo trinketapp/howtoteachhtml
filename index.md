@@ -56,38 +56,59 @@ wistiaEmbed = Wistia.embed("opckf0l87m", {
       </div>
     </div>
   </div>
-  
-  <div class="row">
-    <div class="small-12 columns text-center">
+    <div class="small-12 columns small-centered" style="max-width: 800px">
       {% include playerselect.html %}
-    </div>
     </div>
   <!-- Learn Controls-->
   <div class="row text-center">
     <div class="small-9 small-centered columns show-for-medium-up">
       <ul class="button-group">
-        <li><a onclick="{{ section }}Playlist.play(0,0)" class="button button-lg button-video">
-          <i class="fa fa-play"></i>&nbsp;Pages</a>
+        <li><a onclick="$('.slider').slickPrev()" class="button button-lg button-video">
+        <i class="fa fa-backward"></i></a></li>
+        <li><a onclick="{{ section }}Playlist.play(0,0);$('.slider').slickGoTo(0)" class="button button-lg button-video">
+          <i class="fa fa-play"></i>&nbsp;Pages &amp; Elements</a>
         </li>
-        <li><a onclick="{{ section }}Playlist.play(0,1)" class="button button-lg button-video">
-          <i class="fa fa-play"></i>&nbsp;Elements</a>
+        <li><a onclick="{{ section }}Playlist.play(0,1);$('.slider').slickGoTo(1)" class="button button-lg button-video">
+          <i class="fa fa-play"></i>&nbsp;Styles</a>
           </li>
-        <li><a onclick="{{ section }}Playlist.play(0,2)" class="button button-lg button-video">
-          <i class="fa fa-play"></i>&nbsp;Attributes</a>
+        <li><a onclick="{{ section }}Playlist.play(0,2);$('.slider').slickGoTo(2)" class="button button-lg button-video">
+          <i class="fa fa-play"></i>&nbsp;Animations</a>
         </li>
+        <li><a onclick="$('.slider').slickNext()" class="button button-lg button-video">
+        <i class="fa fa-forward"></i></a></li>
       </ul>
     </div>
   </div>
 </div>
 
 <div class="row text-center trinket-area">
-  <div class="small-10 small-centered columns">
-    <h3>Get Hands-On Practice:</h3>
-{% include trinket-open type='html' height='450' %}
-{% include trinkets/learn-trinket %}
-{% include trinket-close %}
-    <h3>Done? Try Another Video Above!</h3>
+<div class="row">
+<div class="small-12 columns-centered">
+<div class="row">
+  <div class="small-1 columns button" onclick="$('.slider').slickPrev()" style="height: 400px"><i class="fa fa-backward"></i></div>
+  <div class="small-10 columns" style="max-width: 800px">
+    <div class="slider">
+      <div>
+      {% include trinket-open type="html" %}
+      {% include trinkets/doc-trinket %}
+      {% include trinket-close type="html" %}
+      </div>         
+      <div>
+      {% include trinket-open type="html" %}
+      {% include trinkets/style-trinket %}
+      {% include trinket-close type="html" %}
+      </div>
+      <div>
+      {% include trinket-open type="html" %}
+      {% include trinkets/animation-trinket %}
+      {% include trinket-close type="html" %}
+      </div>
+    </div>
   </div>
+  <div class="small-1 columns button end" onclick="$('.slider').slickNext()" style="height: 400px; vertical-align: middle"><i class="fa fa-forward"></i></div>
+</div>
+</div>
+</div>
 </div>
 
 {% assign section="teach" %}
@@ -109,37 +130,33 @@ wistiaEmbed = Wistia.embed("opckf0l87m", {
       {% include playerselect.html %}
   </div>
 
-  <!--{{ section }} Video Controls -->
-     <div class="row text-center">
-        <div class="small-9 small-centered columns show-for-medium-up">
-        <ul class="button-group">
-          <li><a onclick="{{ section }}Playlist.play(0,0)" class="button button-lg button-video">
-          <i class="fa fa-play"></i>&nbsp;Pages</a>
-          </li>
-          <li><a onclick="{{ section }}Playlist.play(0,1)" class="button button-lg button-video">
-          <i class="fa fa-play"></i>&nbsp;Elements</a>
-          </li>
-          <li><a onclick="{{ section }}Playlist.play(0,2)" class="button button-lg button-video">
-          <i class="fa fa-play"></i>&nbsp;Attributes</a>
-          </li>
-        </ul>
-       </div>
-      </div>
-      
-  </div>
-  </div>
-   
-
+  
 <div class="row text-center trinket-area">
   <div class="small-10 small-centered columns">
-    <h3>Give Your Students Hands-on Activities:</h3>
-{% include trinket-open type='html' height='450' %}
-{% include trinkets/teach-trinket %}
-{% include trinket-close %}
+    <h3>Which examples will you use?</h3>
+    <div class="slider">
+      <div>
+      {% include trinket-open type="html" %}
+      {% include trinkets/learn-trinket %}
+      {% include trinket-close type="html" %}
+      </div>         
+      <div>
+      {% include trinket-open type="html" %}
+      {% include trinkets/teach-trinket %}
+      {% include trinket-close type="html" %}
+      </div>
+      <div>
+      {% include trinket-open type="html" %}
+      {% include trinkets/share-trinket %}
+      {% include trinket-close type="html" %}
+      </div>
+    </div>
     <h3>Want Lesson Ideas? Try Another Video Above!</h3>
   </div>
 </div>
 </div> 
+</div>
+</div>
 {% assign section="share" %}
 
 <!-- Share -->
