@@ -15,30 +15,19 @@ id: index
   </div>
   <!--Welcome Video-->
   <div class="row">
-    <div class="small-12 columns">
-      <div class="row">
-        <div classe="small-10 columns small-centered">
-<div id="wistia_oj53jeg68r" class="wistia_embed" style="width:800px;height:450px;" data-video-width="800" data-video-height="450">&nbsp;</div>
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/playlist-v1.js"></script>
+    <div class="small-12 columns small-centered" style="max-width: 800px">
+
+<!--         <div class="small-10 columns small-centered" style="max-width: 800px;"> -->
+<div id="wistia_opckf0l87m" class="wistia_embed" style="width:800px;height:500px;">&nbsp;</div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
 <script>
-wistiaPlaylist = Wistia.playlist("oj53jeg68r", {
-  version: "v1",
-  videoOptions: {
-    volumeControl: true,
-    fullscreenButton: false,
-    playerColor: "008aff",
-    autoPlay: true,
-    videoWidth: "800",
-    videoHeight: "450"
-  },
-  media_0_0: {
-    autoPlay: false,
-    controlsVisibleOnLoad: false
-  }
+wistiaEmbed = Wistia.embed("opckf0l87m", {
+  videoFoam: true
 });
 </script>
-        </div>
-      </div>
+
+<!--         </div> -->
+
     </div>
   </div>
 
