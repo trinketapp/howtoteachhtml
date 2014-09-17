@@ -4,20 +4,19 @@
       <li class="name">
         <h1><a href="#">HTML</a></h1>
       </li>
-       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
 
     <section class="top-bar-section">
       <ul class="left show-for-medium-up">
-        <li data-magellan-arrival="learn" class="show-for-small-up menulink"><a href="#learn">{% include icons/learnicon %}</a></li>
+        <li class="menutext divider"><a></a></li>
+        <li data-magellan-arrival="code" class="show-for-small-up menulink"><a href="#code">{% include icons/learnicon %}Code</a></li>
         {% if page.id == "index" %}
-        <li class="menutext"><a><i class="fa fa-plus"></i></a></li>
-        <li data-magellan-arrival="teach" class="menulink"><a href="#teach">{% include icons/teachicon %}</a></li>
-        <li class="menutext"><a><i class="fa fa-plus"></i></a></li>
-        <li data-magellan-arrival="share" class="menulink"><a href="#share">{% include icons/shareicon %}</a></li>
-        <li class="menutext"><a><i class="fa fa-arrow-right fa-sm"></i></a></li>
-        <li class="menutext"><a><i class="fa fa-child fa-2x"></i></a></li>
+        <li class="menutext divider"><a></a></li>
+        <li data-magellan-arrival="teach" class="menulink"><a href="#teach">{% include icons/teachicon %}Teach</a></li>
+        <li class="menutext divider"><a></a></li>
+        <li data-magellan-arrival="share" class="menulink"><a href="#share">{% include icons/shareicon %}Share</a></li>
+        <li class="menutext divider"><a></a></li>
         {% endif %}
       </ul>
       <!-- Right Nav Section -->

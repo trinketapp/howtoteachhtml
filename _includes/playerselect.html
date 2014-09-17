@@ -1,4 +1,4 @@
-{% if section == "learn" %}
+{% if section == "code" %}
 
   {% assign id="6uk05v0nmc" %}
   {% assign color="008aff" %}
@@ -9,19 +9,19 @@
   {% assign color="26bf12" %}
 
 {% endif %}
-<div id="wistia_{{ id }}" class="wistia_embed" style="width:800px;height:450px;" data-video-width="800" data-video-height="450">&nbsp;</div>
+<div id="wistia_{{ id }}" class="wistia_embed" style="width:800px;height:500px;" data-video-width="800" data-video-height="500">&nbsp;</div>
       <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/playlist-v1.js"></script>
       <script>
         {{ section }}Playlist = Wistia.playlist("{{ id }}", {
-        version: "v1",
-        stillUrl: "http://trinket.io/img/trinket-logo.png",
-        theme: "tab",
-        videoOptions: {
-          volumeControl: true,
-          playerColor: "{{ color }}",
-          autoPlay: true,
-          videoWidth: "800",
-          videoHeight: "450"
+          version: "v1",
+          theme: "bare",
+          autoAdvance: false,
+          videoOptions: {
+            volumeControl: true,
+            playerColor: "{{ color }}",
+            autoPlay: true,
+            videoWidth: "800",
+            videoHeight: "500"
         },
         media_0_0: {
           autoPlay: false,
